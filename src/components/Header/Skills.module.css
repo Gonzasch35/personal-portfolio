@@ -1,0 +1,65 @@
+.skills {
+    margin: 0 auto;
+    min-height: calc(60vh - 4rem);
+    width: 95vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.skillTitle {
+    margin: 1rem 0;
+    font-size: 3rem;
+    padding: 2rem;
+    border-bottom: 4px solid #efe834;
+}
+
+.skillBars {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.image {
+    padding: 0;
+    width: 9rem;
+    height: 9rem;
+    background-color: #4e4f4f;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.react {
+    scale: .8;
+    object-fit: cover;
+}
+
+.jest {
+    scale: 1.5;
+}
+
+.git {
+    scale: 1.8;
+}
+
+.bigs {
+    scale: .8;
+}
+
+.trello {
+    scale: .25;
+}
+
+.skillBars:hover > :not(:hover) {
+    scale: .9;
+    opacity: .4;
+}
