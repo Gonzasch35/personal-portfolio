@@ -24,8 +24,22 @@ const Proyects = () => {
           <a href='https://pokemon-app-xi-five.vercel.app/' className={style.btn}>Go to Proyect</a>
         </div>
       </div>
-      <div>
-        <img src={proyect2} alt="" />
+      <div className={style.proyect}>
+
+        <div>
+          <img src={proyect2} alt="" />
+        </div>
+
+        <div className={style.proyectDescription}>
+          <h3>Pokemon App</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum accusantium distinctio perspiciatis assumenda ratione, sapiente fugit dicta dolores, mollitia commodi aspernatur, dolor hic praesentium veniam ipsam deserunt voluptas. Unde, quaerat.</p>
+          <div>
+              <img align="left" alt="Node.js" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+              <img align="left" alt="Express.js" width="40px" src="https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png" />
+          </div>
+          <a href='https://pokemon-app-xi-five.vercel.app/' className={style.btn}>Go to Proyect</a>
+        </div>
+
       </div>
     </section>
   )
