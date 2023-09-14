@@ -7,7 +7,7 @@ import proyect2 from '../../assets/proyect2.png'
 
 const Proyects = () => {
   return (
-    <section className={style.works}>
+    <section id='projects' className={style.works}>
       <h2 className={style.title}>Proyects</h2>
       <span className={style.description}></span>
       <div className={style.proyect}>
@@ -27,11 +27,11 @@ const Proyects = () => {
       <div className={style.proyect}>
 
         <div>
-          <img src={proyect2} alt="" />
+          <img className={style.image} src={proyect2} alt="" />
         </div>
 
         <div className={style.proyectDescription}>
-          <h3>Pokemon App</h3>
+          <h3>Sportiverse</h3>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum accusantium distinctio perspiciatis assumenda ratione, sapiente fugit dicta dolores, mollitia commodi aspernatur, dolor hic praesentium veniam ipsam deserunt voluptas. Unde, quaerat.</p>
           <div>
               <img align="left" alt="Node.js" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />

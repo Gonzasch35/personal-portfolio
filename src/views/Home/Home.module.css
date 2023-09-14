@@ -141,3 +141,55 @@
 .menu .icon4:hover a {
     box-shadow: 0 0 0 2px rgb(39, 145, 46), 0 0 0 6px #fff;
 }
+
+
+
+/* nav */
+
+.container {
+    height: 5rem;
+    width: 100%;
+    margin: 0;
+    padding-block: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    transition: 0.25s ease-in-out;
+}
+
+.scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    background: linear-gradient(to top, #ffffff00, #1a1a1a);
+}
+
+
+.logo {
+    padding-left: 2rem;
+    object-fit: cover;
+    width: 10rem;
+}
+
+.items {
+    margin: 3rem;
+    padding: 0;
+    text-decoration: none;
+    color: #22609F;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.items:hover {
+    color: white;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid white;
+}

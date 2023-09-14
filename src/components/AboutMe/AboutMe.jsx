@@ -6,7 +6,7 @@ import btn from '../../assets/hireme.png'
 
 const AboutMe = () => {
   return (
-    <section className={style.container}>
+    <section id='about' className={style.container}>
 
       <div className={style.boxBg}>
         <img src={image} alt="profile" className={style.bg} />

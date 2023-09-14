@@ -32,10 +32,10 @@ const Nav = () => {
             <a href="#"><img className={style.logo} src={logo} alt="" /></a>
         </div>
         <div>
-            <Link className={style.items}>Home</Link>
-            <Link className={style.items}>Skills</Link>
-            <Link className={style.items}>Proyects</Link>
-            <Link className={style.items}>Contact Me</Link>
+            <a href='#' className={style.items}>Home</a>
+            <a href='#skills' className={style.items}>Skills</a>
+            <a href="#projects" className={style.items}>Projects</a>
+            <a href='#contact' className={style.items}>Contact Me</a>
         </div>
     </div>
   )

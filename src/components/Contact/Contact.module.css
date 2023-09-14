@@ -45,13 +45,25 @@
     background: rgb(40, 40, 40);
 }
 
-.submitBtn {
-    background: white;
-    border: none;
-    border-radius: .5rem;
+.btn {
+    margin-top: 2rem;
+    max-width: max-content;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
+    padding: .5rem 1rem;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: transparent;
     cursor: pointer;
-    padding: .75rem 3.5rem;
+}
+
+.btn:hover {
     color: black;
-    margin: 2rem;
-    
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 0 0 2px #333, 0 0 0 5px #fff;
+    background-color: white;
+    transition: 0.35s ease-in-out;
 }
