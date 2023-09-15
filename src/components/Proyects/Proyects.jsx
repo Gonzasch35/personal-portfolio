@@ -47,7 +47,7 @@ const Proyects = () => {
                   <img align="left" alt="Node.js" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
                   <img align="left" alt="Express.js" width="40px" src="https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png" />
               </div>
-              <a href='https://pokemon-app-xi-five.vercel.app/' className={style.btn}>Go to Proyect</a>
+              <a href='https://sportiverse-client.onrender.com/' className={style.btn}>Go to Proyect</a>
             </div>
 
           </div>
