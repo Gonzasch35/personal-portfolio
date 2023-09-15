@@ -1,14 +1,18 @@
 .container {
-    min-height: calc(90vh - 4rem);
+    min-height: calc(100vh - 4rem);
     width: 100%;
     max-width: 80rem;
-    margin: auto;
-    left: 0;
+    margin: 0 auto;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 
 .bg {
+    width: 100%;
     z-index: -1;
     object-fit: cover;
 }
@@ -33,7 +37,7 @@
 
 .name {
     font-family: monospace;
-    font-size: 60px;
+    font-size: 3vw;
     white-space: nowrap;
     color: #ffffff;
     margin-right: 2rem;
@@ -42,11 +46,18 @@
 }
 
 .me {
+    width: 100%;
+    max-width: 800px;
     display: flex;
     flex-direction: row;
     align-content: center;
     justify-content: center;
     text-align: center;
+}
+
+.readme {
+    width: 100%;
+    max-width: 600px;
 }
 
 .info {
