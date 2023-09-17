@@ -19,7 +19,7 @@
 }
 
 .skillBars {
-    margin-top: 2rem;
+    margin-top: 4rem;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -32,15 +32,38 @@
     padding: 0;
     width: 9rem;
     height: 9rem;
-    background-color: #4e4f4f;
+    background-color: rgba(215, 11, 11, 0);
     transition: .3s;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
+.image p {
+    position: absolute;
+    top: -2.3rem;
+    transform: translateY(-1.5rem);
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+    opacity: 0;
+    background-color: #d5b723;
+    padding: 0.1rem 0.3rem;
+    transition: 0.25s ease-in-out;
+    border-radius: 4px;
+}
+
+.image:hover p {
+    transform: translateY(0);
+    opacity: 1;
+}
+
 .react {
     scale: .8;
     object-fit: cover;
+}
+
+.python {
+    scale: 0.05;
 }
 
 .jest {
