@@ -8,7 +8,7 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault()
-
+    
     emailjs.sendForm('service_frrucal', 'template_aqlm153', form.current, 'wGDMKasbUD-9buRB8')
       .then((result) => {
         console.log(result.text);
