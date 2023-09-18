@@ -46,3 +46,14 @@
     border-bottom: 2px solid white;
 }
 
+@media (max-width:1000px) {
+    .container {
+        flex-direction: column;
+    }
+    .items {
+        margin: 1rem;
+        font-size: .8rem;
+    }
+
+}
+

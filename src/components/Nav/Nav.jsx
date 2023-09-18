@@ -31,7 +31,7 @@ const Nav = () => {
         <div>
             <a href="#"><img className={style.logo} src={logo} alt="" /></a>
         </div>
-        <div>
+        <div className={style.enlaces}>
             <a href='#' className={style.items}>Home</a>
             <a href='#skills' className={style.items}>Skills</a>
             <a href="#projects" className={style.items}>Projects</a>
