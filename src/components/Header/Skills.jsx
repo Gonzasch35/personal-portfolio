@@ -16,7 +16,7 @@ const Skills = () => {
   return (
     <section id='skills' className={styles.skills}>
       <h2 className={styles.skillTitle}>Skills</h2>
-      <span className={styles.skillDesc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad beatae debitis fugiat porro vitae, quibusdam sit ullam a, alias natus illum? Sed esse ipsa commodi natus dignissimos, ea aut modi?</span>
+      <span className={styles.skillDesc}></span>
       <div className={styles.skillBars}>
 
           <div className={styles.image}>

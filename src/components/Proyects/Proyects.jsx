@@ -23,7 +23,7 @@ const Proyects = () => {
             </div>
             <div className={style.proyectDescription}>
               <h3>Pokemon App</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum accusantium distinctio perspiciatis assumenda ratione, sapiente fugit dicta dolores, mollitia commodi aspernatur, dolor hic praesentium veniam ipsam deserunt voluptas. Unde, quaerat.</p>
+              <p>Individual project carried out at Henry's bootcamp with the theme of Pokémon in which I applied all the technologies learned throughout the course.</p>
               <div>
                   <img align="left" alt="Node.js" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
                   <img align="left" alt="Express.js" width="40px" src="https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png" />
@@ -42,7 +42,7 @@ const Proyects = () => {
 
             <div className={style.proyectDescription}>
               <h3>Sportiverse</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum accusantium distinctio perspiciatis assumenda ratione, sapiente fugit dicta dolores, mollitia commodi aspernatur, dolor hic praesentium veniam ipsam deserunt voluptas. Unde, quaerat.</p>
+              <p>Final project of Henry's bootcamp carried out in a group, in which I was in charge along with part of the app's backend team. I also performed the util testing of the back routes.</p>
               <div>
                   <img align="left" alt="Node.js" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
                   <img align="left" alt="Express.js" width="40px" src="https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png" />
