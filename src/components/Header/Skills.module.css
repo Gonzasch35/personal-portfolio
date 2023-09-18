@@ -39,6 +39,13 @@
     justify-content: center;
     position: relative;
     cursor: pointer;
+    overflow: hidden;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .image p {
@@ -88,3 +95,27 @@
     scale: .9;
     opacity: .4;
 }
+
+@media (max-width: 768px) {
+    /* Estilos para pantallas de hasta 768px de ancho */
+    .skillTitle {
+      font-size: 2rem;
+    }
+  
+    .image {
+      width: 7rem;
+      height: 7rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Estilos para pantallas de hasta 480px de ancho */
+    .skillTitle {
+      font-size: 1.5rem;
+    }
+  
+    .image {
+      width: 6rem;
+      height: 6rem;
+    }
+  }

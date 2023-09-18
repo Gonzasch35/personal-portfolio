@@ -83,3 +83,27 @@
     background-color: white;
     transition: 0.35s ease-in-out;
 }
+
+/* Media queries para hacer responsive */
+
+@media (max-width: 768px) {
+    /* Estilos para pantallas de hasta 768px de ancho */
+    .title {
+      font-size: 2rem;
+    }
+  
+    .proyect {
+      grid-template-columns: 1fr; /* Cambiar a una sola columna */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Estilos para pantallas de hasta 480px de ancho */
+    .title {
+      font-size: 1.5rem;
+    }
+  
+    .image {
+      height: 20rem; /* Ajustar el alto de la imagen para pantallas pequeñas */
+    }
+  }

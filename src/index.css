@@ -5,8 +5,8 @@
 
   color: rgba(255, 255, 255, 0.87);
   background-image: url('../src/assets/fondo.png');
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: contain;
+  background-repeat: repeat;
   background-attachment: fixed;
   background-color: #242424;
 
@@ -24,18 +24,4 @@
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-}
-
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
