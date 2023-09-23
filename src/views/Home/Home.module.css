@@ -3,11 +3,11 @@
     padding-top: 10rem;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     position: relative;
 }
 
-.menu {
+/* .menu {
     position: sticky;
     bottom: 2%;
     left: 95vw;
@@ -140,7 +140,7 @@
 }
 .menu .icon4:hover a {
     box-shadow: 0 0 0 2px rgb(39, 145, 46), 0 0 0 6px #fff;
-}
+} */
 
 
 

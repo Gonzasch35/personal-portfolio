@@ -1,7 +1,7 @@
 .container {
     min-height: calc(100vh - 4rem);
-    width: 100%;
-    max-width: 80rem;
+    width: 100vw;
+    max-width: 60rem;
     margin: 0 auto;
     text-align: center;
     display: flex;
@@ -20,7 +20,8 @@
 
 
 .aboutContainer {
-    width: 100%;
+    width: 100vw;
+    max-width: 60rem;
     margin-top: -5rem;
     padding-top: 0;
     font-size: 3rem;
@@ -41,28 +42,35 @@
     font-size: 3vw;
     white-space: nowrap;
     color: #ffffff;
-    margin-right: 2rem;
+    margin-right: 1rem;
 
    /*  animation: typing 2s steps(3), blink .5s infinite step-end alternate; */
 }
 
+.name_full {
+    font-size: 3vw;
+    font-family:'Saira Stencil One', cursive;
+    color: #f3c728;
+}
+
 .me {
-    width: 100%;
-    max-width: 800px;
+    width: 100vw;
+    max-width: 60rem;
     display: flex;
     flex-direction: row;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     text-align: center;
+    margin: auto;
 }
 
 .readme {
-    width: 100%;
-    max-width: 600px;
+    width: 100vw;
+    max-width: 60rem;
 }
 
 .info {
-    color:#fff;
+    color:#ffffff;
     padding:4px 12px;
     height:45px;
     margin-bottom:45px;
@@ -70,10 +78,11 @@
 }
 
 .contactDesc {
-    width: 60rem;
-    font-weight: 300;
+    max-width: 60rem;
+    font-weight: 500;
     font-size: medium;
     padding: 1rem;
+    color: #ffffff;
 }
 
 .btn {
@@ -102,6 +111,21 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
+}
+
+.redes {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.icon {
+    list-style: none;
+}
+
+.icon a {
+    color: #fff;
 }
 
 .flip {
@@ -161,5 +185,14 @@
     .buttons {
         flex-direction: column; /* Cambia la dirección de los botones en pantallas pequeñas */
         gap: 1rem;
-      }
+    }
+    .hello {
+        font-size: 1.5rem;
+    }
+    .name {
+        font-size: 2rem;
+    }
+    .name_full {
+        font-size: 2rem;
+    }
 }

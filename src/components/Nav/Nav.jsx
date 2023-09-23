@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-scroll'
 import style from './Nav.module.css'
 import logo from '../../assets/logo1.png'
 
@@ -32,10 +32,10 @@ const Nav = () => {
             <a href="#"><img className={style.logo} src={logo} alt="" /></a>
         </div>
         <div className={style.enlaces}>
-            <a href='#' className={style.items}>Home</a>
-            <a href='#skills' className={style.items}>Skills</a>
-            <a href="#projects" className={style.items}>Projects</a>
-            <a href='#contact' className={style.items}>Contact Me</a>
+            <Link activeClass={style.active} to='about' spy={true} smooth={true} offset={-100} duration={500} className={style.items}>Home</Link>
+            <Link activeClass={style.active} to='skills' spy={true} smooth={true} offset={-20} duration={500} className={style.items}>Skills</Link>
+            <Link activeClass={style.active} to="projects" spy={true} smooth={true} offset={-20} duration={500} className={style.items}>Projects</Link>
+            <Link activeClass={style.active} to='contact' spy={true} smooth={true} offset={-20} duration={500} className={style.items}>Contact Me</Link>
         </div>
     </div>
   )

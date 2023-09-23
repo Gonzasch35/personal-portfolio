@@ -1,11 +1,59 @@
-import React from 'react'
+import React, { useState } from 'react'
 import style from './Proyects.module.css'
-import pokemon from '../../assets/pokemon.jpg'
-import sportiverse from '../../assets/sportiverse.png'
-import proyect1 from '../../assets/proyect1.png'
-import proyect2 from '../../assets/proyect2.png'
+import pokemon from '../../assets/pokemon5.jpg'
+import sportiverse from '../../assets/sportiverse5.jpg'
+import git from '../../assets/git-scm-icon.svg'
+import react from '../../assets/react.svg'
+import jest from '../../assets/jest.svg'
+import redux from '../../assets/redux.svg'
+import postgresql from '../../assets/postgresql.svg'
+import node from '../../assets/nodejs.svg'
+import javascript from '../../assets/javascript.svg'
+import html from '../../assets/html.svg'
+import css from '../../assets/css.svg'
+import trello from '../../assets/trello.png'
+import python from '../../assets/python.png'
+import Project from './Project'
+import portfolio from '../../assets/foto-perfil3.png'
 
 const Proyects = () => {
+
+  const projects = [
+    {
+      id: 1,
+      image: pokemon,
+      name: 'Pokemon App',
+      description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos optio deleniti, suscipit ipsa ducimus ipsum maxime cum quos temporibus quasi beatae quibusdam eaque delectus iste, deserunt vitae possimus, sunt accusamus!',
+      skills: [react, redux, javascript, html, css],
+      url: 'https://pokemon-app-xi-five.vercel.app/',
+    },
+    {
+      id: 2,
+      image: sportiverse,
+      name: 'Sportiverse',
+      description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos optio deleniti, suscipit ipsa ducimus ipsum maxime cum quos temporibus quasi beatae quibusdam eaque delectus iste, deserunt vitae possimus, sunt accusamus!',
+      skills: [react, redux, javascript, html, css],
+      url: 'https://pokemon-app-xi-five.vercel.app/',
+    },
+    {
+      id: 3,
+      image: portfolio,
+      name: 'Portfolio Personal',
+      description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos optio deleniti, suscipit ipsa ducimus ipsum maxime cum quos temporibus quasi beatae quibusdam eaque delectus iste, deserunt vitae possimus, sunt accusamus!',
+      skills: [react, redux, javascript, html, css],
+      url: 'https://pokemon-app-xi-five.vercel.app/',
+    },
+    /* {
+      id: 4,
+      image: pokemon,
+      name: 'Pokemon App',
+      description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos optio deleniti, suscipit ipsa ducimus ipsum maxime cum quos temporibus quasi beatae quibusdam eaque delectus iste, deserunt vitae possimus, sunt accusamus!',
+      skills: [react, redux, javascript, html, css],
+      url: 'https://vet-meet-mingle.netlify.app/'
+    }, */
+  ]
+  
+
   return (
     <section id='projects' className={style.works}>
 
@@ -13,44 +61,19 @@ const Proyects = () => {
       
       <span className={style.description}></span>
 
-      <div className={style.allProyects}>
+      <div className={style.projects_container}>
 
-          {/* Proyecto 1 */}
-
-          <div className={style.proyect}>
-            <div>
-              <img className={style.image} src={proyect1} alt="" />
-            </div>
-            <div className={style.proyectDescription}>
-              <h3>Pokemon App</h3>
-              <p>Individual project carried out at Henry's bootcamp with the theme of Pokémon in which I applied all the technologies learned throughout the course.</p>
-              <div>
-                  <img align="left" alt="Node.js" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-                  <img align="left" alt="Express.js" width="40px" src="https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png" />
-              </div>
-              <a href='https://pokemon-app-xi-five.vercel.app/' className={style.btn}>Go to Proyect</a>
-            </div>
-          </div>
-
-          {/* \\ Proyecto 2 */}
-
-          <div className={style.proyect}>
-
-            <div>
-              <img className={style.image} src={proyect2} alt="" />
-            </div>
-
-            <div className={style.proyectDescription}>
-              <h3>Sportiverse</h3>
-              <p>Final project of Henry's bootcamp carried out in a group, in which I was in charge along with part of the app's backend team. I also performed the util testing of the back routes.</p>
-              <div>
-                  <img align="left" alt="Node.js" width="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-                  <img align="left" alt="Express.js" width="40px" src="https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png" />
-              </div>
-              <a href='https://sportiverse-client.onrender.com/' className={style.btn}>Go to Proyect</a>
-            </div>
-
-          </div>
+        {projects?.map(p => {
+          return(
+            <Project 
+              key={p.id}
+              image={p.image}
+              name={p.name}
+              description={p.description}
+              skills={p.skills}  
+            />
+          )
+        })}
       </div>
     </section>
   )

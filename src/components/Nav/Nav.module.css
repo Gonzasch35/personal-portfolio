@@ -46,6 +46,12 @@
     border-bottom: 2px solid white;
 }
 
+.active {
+    color: white;
+    border-bottom: 3px solid white;
+    padding-bottom: .5rem;
+}
+
 @media (max-width:1000px) {
     .container {
         flex-direction: column;
