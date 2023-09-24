@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import style from './Contact.module.css'
 import emailjs from '@emailjs/browser'
+import Swal from 'sweetalert2'
 
 const Contact = () => {
 
@@ -17,10 +18,32 @@ const Contact = () => {
     setMessage({...message, [property]: value})
   } 
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
+    if(message.name != '' && message.email != '' && message.message != '') {
+      Swal.fire({
+        title: `Hello ${message.your_name}`,
+        text: 'Thanks for your message',
+        icon: 'success',
+        confirmButtonText: 'Continue'
+      })
+      emailjs.sendForm('service_frrucal', 'template_aqlm153', form.current, 'wGDMKasbUD-9buRB8')
+      .then((result) => {
+        console.log(result.text);
+      }, error => {
+        console.log(error.text);
+      })
+    } else {
+      Swal.fire({
+        title: 'Error!',
+        text: 'Do you want to continue',
+        icon: 'error',
+        confirmButtonText: 'Cool'
+      })
+    }
     setMessage({your_name: '', your_email: '', message: ''})
   }
+
 
   const form = useRef();
 
@@ -48,7 +71,7 @@ const Contact = () => {
           
           <textarea className={style.msg} onChange={handleChange} value={message.message} name="message" rows="5" placeholder='Your Message' required></textarea>
           
-          <button onSubmit={handleSubmit} type='submit' value='Send' className={style.btn}>Submit</button>
+          <button onClick={handleSubmit} type='submit' value='Send' className={style.btn}>Submit</button>
         
         </form>
       </div>
