@@ -35,22 +35,23 @@
 
 .name, .email, .msg {
     font-size: medium;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
     max-width: 40rem;
     margin: 0.5rem;
     padding: 0.5rem 1rem;
-    color: white;
+    color: rgb(244, 244, 244);
     border: none;
     border-radius: .5rem;
-    background: rgb(40, 40, 40);
+    background: rgb(60, 60, 60);
 }
 
 .btn {
     margin-top: 2rem;
     max-width: max-content;
-    color: white;
+    color: #ffffff;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 300;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1.7px;
