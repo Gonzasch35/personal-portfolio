@@ -1,10 +1,11 @@
 .card {
     width: 20rem;
-    height: 48rem;
+    height: auto;
     border-radius: .5rem;
     overflow: hidden;
     margin: 1rem auto;
-    background-color: rgba(0, 0, 0, 0.551);
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .first_section {
@@ -20,6 +21,24 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    overflow: hidden;
+}
+
+.second_section h4 {
+    color: #efe834;
+}
+
+.functions_container {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.second_section li {
+    list-style-type: none ;
+    font-size: .9rem;
 }
 
 .image {
@@ -30,24 +49,29 @@
 
 .title {
     margin: 0 24px 16px 24px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    color: #efe834;
 }
 
 .description {
-    margin: 0 24px 44px 24px;
+    width: 100%;
+    margin: 0 24px 20px 24px;
 }
 
 .skills_container {
+    width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: .2rem;
+    gap: 1rem;
 }
 
 .skill {
-    width: 3rem;
-    height: 3rem;
+    margin-bottom: 10px;
+    width: 2rem;
+    height: 2rem;
 }
 
 .buttons {
@@ -83,12 +107,13 @@
 @media (min-width: 620px) {
     .card {
         width: 600px;
-        height: 450px;
+        height: auto;
         display: flex;
+        flex-direction:column ;
         margin: 100px auto 75px;
     }
     .first_section {
-        width: 50%;
+        width: 100%;
         height: 100%;
     }
     .image {
@@ -102,10 +127,14 @@
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
     .card {
+        flex-direction: row;
         width: 100%;
         height: 80vh;
+    }
+    .first_section{
+        width: 40%;
     }
     .second_section {
         width: 50%;

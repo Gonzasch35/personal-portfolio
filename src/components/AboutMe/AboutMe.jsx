@@ -3,7 +3,7 @@ import image from '../../assets/foto-perfil3.png'
 import style from './AboutMe.module.css'
 import { Link } from 'react-scroll'
 import btn from '../../assets/hireme.png'
-import cv from '../../assets/Gonzalo-Schmidt-CV.pdf'
+import cv from '../../assets/Gonzalo-Schmidt-CV-English.pdf'
 
 const AboutMe = () => {
   return (
