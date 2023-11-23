@@ -15,6 +15,7 @@ import trello from '../../assets/trello.png'
 import python from '../../assets/python.png'
 import Project from './Project'
 import portfolio from '../../assets/foto-perfil3.png'
+import coffee from '../../assets/cofee-rest.png'
 
 const Proyects = () => {
 
@@ -41,12 +42,12 @@ const Proyects = () => {
     },
     {
       id: 3,
-      image: portfolio,
-      name: 'Personal Portfolio ',
+      image: coffee,
+      name: 'Coffee Rest',
       description: "My personal web development portfolio showcases my skills in front-end and back-end development using modern technologies like React, JavaScript, and CSS. It's a visual journey through my projects, highlighting my dedication to clean design and efficient, maintainable code. Explore my work and let's connect for potential collaborations.",
-      skills: [html, css, javascript, node, react],
-      url: 'https://gonzalo-schmidt-portfolio.vercel.app/',
-      github: 'https://github.com/Gonzasch35/personal-portfolio'
+      skills: [html, css, javascript, node, react, postgresql],
+      url: 'https://rest-food.vercel.app/',
+      github: 'https://github.com/Gonzasch35/rest-food'
     },
     /* {
       id: 4,
