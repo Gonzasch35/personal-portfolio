@@ -44,7 +44,7 @@ const Proyects = () => {
       id: 3,
       image: coffee,
       name: 'Coffee Rest',
-      description: "My personal web development portfolio showcases my skills in front-end and back-end development using modern technologies like React, JavaScript, and CSS. It's a visual journey through my projects, highlighting my dedication to clean design and efficient, maintainable code. Explore my work and let's connect for potential collaborations.",
+      description: "Project carried out individually for a cafeteria in order to manage reservations and orders in a more agile way.",
       skills: [html, css, javascript, node, react, postgresql],
       url: 'https://rest-food.vercel.app/',
       github: 'https://github.com/Gonzasch35/rest-food'
